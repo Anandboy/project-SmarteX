@@ -64,8 +64,7 @@ class _AutomaticScreenState extends State<AutomaticScreen> {
   // Function to check if an SMS is a banking message
   bool _isBankingMessage(String message) {
     List<String> keywords = [
-      "debited", "credited", "txn", "transaction", "bank", "a/c", "available balance",
-      "Rs.", "INR", "UPI", "NEFT", "IMPS", "OTP", "credited to", "debited from"
+      "debited", "credited", "transaction", "credited to", "debited from"
     ];
 
     return keywords.any((keyword) => message.toLowerCase().contains(keyword));
