@@ -4,8 +4,8 @@ The SmarteX Expense Tracker is a mobile application designed to help users track
 
   The app offers data visualization tools like pie charts and line graphs to provide users with insights into their spending habits. By integrating budgeting tools, it promotes better financial discipline and helps users achieve their financial goals. Built using Flutter, it ensures smooth performance on Android devices.
 
-🔹 Key Features
-  Expense Entry Options:
+🔹 Key Features  
+  Expense Entry Options:  
       Manual Entry: Users can manually log expenses with details like amount, category, and description.
       Automated SMS Extraction: Uses Machine Learning (ML) to extract expense details from bank SMS notifications.
   Data Visualization:
