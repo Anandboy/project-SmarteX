@@ -1,41 +1,50 @@
 # project-SmarteX
-📌 Abstract
-The SmarteX Expense Tracker is a mobile application designed to help users track, analyze, and manage their personal finances efficiently. It provides manual and automatic expense tracking, allowing users to input their expenses manually or extract transaction details automatically using Machine Learning (ML) from SMS notifications.
+# 📌 Abstract  
+The SmarteX Expense Tracker is a mobile application designed to help users track, analyze, and manage their personal finances efficiently.<br>
+It provides manual and automatic expense tracking, allowing users to input their expenses manually or extract transaction details automatically using Machine Learning (ML) from SMS notifications.<br>
 
-  The app offers data visualization tools like pie charts and line graphs to provide users with insights into their spending habits. By integrating budgeting tools, it promotes better financial discipline and helps users achieve their financial goals. Built using Flutter, it ensures smooth performance on Android devices.
+The app offers data visualization tools like pie charts and line graphs to provide users with insights into their spending habits.<br>
+By integrating budgeting tools, it promotes better financial discipline and helps users achieve their financial goals.<br>
+Built using Flutter, it ensures smooth performance on Android devices.<br>
 
-🔹 Key Features  
-  Expense Entry Options:  
-      Manual Entry: Users can manually log expenses with details like amount, category, and description.  
-      Automated SMS Extraction: Uses Machine Learning (ML) to extract expense details from bank SMS notifications.  
-  Data Visualization:  
-      Pie Chart: Displays expense distribution across categories.  
-  Budgeting & Alerts:  
-      Users can set financial goals and track budgets.  
-      Alerts notify users when they exceed budget limits.  
-  User Authentication:  
-      Firebase Authentication for secure login.  
-      Encrypted data storage to protect financial information.  
-  Database Integration:  
-    Uses Firebase Firestore to store and manage financial data in real-time.  
+## 🔹 Key Features  
+### Expense Entry Options:<br>
+- **Manual Entry:** Users can manually log expenses with details like amount, category, and description.<br>
+- **Automated SMS Extraction:** Uses Machine Learning (ML) to extract expense details from bank SMS notifications.<br>
 
-🔹 Technologies Used  
-    Flutter – Frontend UI development.  
-    Firebase Firestore – Cloud database for storing user expenses.  
-    Firebase Authentication – Secure user login.  
-    Machine Learning (ML) – Extracts transaction details from SMS.  
-    fl_chart Library – Generates pie charts & line graphs for visual analytics.  
- 
-🔹 System Design  
-  User Interface (UI):  
-    Simple and Intuitive Design – The interface is clean and user-friendly, ensuring smooth navigation and easy access to expense management features.  
-    Quick Access to Key Features – The home screen provides four main options (Manual Expense, Automatic Expense, View Charts, and Set Alerts), allowing users       to efficiently manage and track their expenses.  
-  Backend Components:  
-    ML Model for SMS classification.  
-    Firebase for real-time database management.  
+### Data Visualization:<br>
+- **Pie Chart:** Displays expense distribution across categories.<br>
 
-🔹 Challenges & Constraints  
-  Privacy concerns with SMS processing.  
-    Different banks use varied SMS formats, making ML training complex.
-    Ensuring high accuracy in automatic transaction classification.  
+### Budgeting & Alerts:<br>
+- **Users can set financial goals and track budgets.**<br>
+- **Alerts notify users when they exceed budget limits.**<br>
+
+### User Authentication:<br>
+- **Firebase Authentication for secure login.**<br>
+- **Encrypted data storage to protect financial information.**<br>
+
+### Database Integration:<br>
+- **Uses Firebase Firestore to store and manage financial data in real-time.**<br>
+
+## 🔹 Technologies Used  
+- **Flutter** – Frontend UI development.<br>
+- **Firebase Firestore** – Cloud database for storing user expenses.<br>
+- **Firebase Authentication** – Secure user login.<br>
+- **Machine Learning (ML)** – Extracts transaction details from SMS.<br>
+- **fl_chart Library** – Generates pie charts & line graphs for visual analytics.<br>
+
+## 🔹 System Design  
+### User Interface (UI):<br>
+- **Simple and Intuitive Design** – The interface is clean and user-friendly, ensuring smooth navigation and easy access to expense management features.<br>
+- **Quick Access to Key Features** – The home screen provides four main options (Manual Expense, Automatic Expense, View Charts, and Set Alerts), allowing users to efficiently manage and track their expenses.<br>
+
+### Backend Components:<br>
+- **ML Model for SMS classification.**<br>
+- **Firebase for real-time database management.**<br>
+
+## 🔹 Challenges & Constraints  
+- **Privacy concerns with SMS processing.**<br>
+- **Different banks use varied SMS formats, making ML training complex.**<br>
+- **Ensuring high accuracy in automatic transaction classification.**<br>
+
 
