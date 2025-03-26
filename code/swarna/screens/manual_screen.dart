@@ -11,10 +11,11 @@ class ManualScreen extends StatefulWidget {
 }
 
 class _ManualScreenState extends State<ManualScreen> {
-  final _titleController = TextEditingController();
-  final _amountController = TextEditingController();
-  String? _selectedCategory;
+  final _titleController = TextEditingController(); // Controller for title input field
+  final _amountController = TextEditingController(); // Controller for amount input field
+  String? _selectedCategory;// Stores the selected category
 
+  // List of predefined categories
   final List<String> _categories = [
     "Housing",
     "Food",
@@ -26,9 +27,10 @@ class _ManualScreenState extends State<ManualScreen> {
     "Education"
   ];
 
+  // Function to add an expense to Firestore
   Future<void> _addExpense() async {
     final user = FirebaseAuth.instance.currentUser;
-    if (user == null || _selectedCategory == null) return;
+    if (user == null || _selectedCategory == null) return;// Check if user is logged in and category is selected
 
     try {
       await FirebaseFirestore.instance.collection('expenses').add({
@@ -44,6 +46,7 @@ class _ManualScreenState extends State<ManualScreen> {
         SnackBar(content: Text('Expense added successfully')),
       );
 
+      // Clear input fields after adding the expense
       _titleController.clear();
       _amountController.clear();
       setState(() => _selectedCategory = null);
@@ -132,6 +135,7 @@ class _DisplayExpensesScreenState extends State<DisplayExpensesScreen> {
     "Education"
   ];
 
+  // Function to delete an expense from Firestore
   Future<void> _deleteExpense(String docId) async {
     await FirebaseFirestore.instance.collection('expenses').doc(docId).delete();
     ScaffoldMessenger.of(context).showSnackBar(
@@ -146,6 +150,7 @@ class _DisplayExpensesScreenState extends State<DisplayExpensesScreen> {
       return Scaffold(body: Center(child: Text("User not logged in")));
     }
 
+    // Query expenses for the current user and filter as needed
     Query expensesQuery = FirebaseFirestore.instance
         .collection('expenses')
         .where('userID', isEqualTo: user.uid)
