@@ -5,7 +5,7 @@ import 'package:personal_expense_tracker/screens/home_screen.dart';
 import 'package:personal_expense_tracker/services/auth_service.dart';
 import 'package:personal_expense_tracker/utils/app_validator.dart';
 
-
+/// SignUp Screen for new user registration
 class SignUpView extends StatefulWidget {
   const SignUpView({super.key});
 
@@ -14,39 +14,43 @@ class SignUpView extends StatefulWidget {
 }
 
 class _SignUpViewState extends State<SignUpView> {
+  // Form key to manage form validation
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  // Controllers for input fields
   final _usernameController = TextEditingController();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
+  // Firebase Authentication instance
   final FirebaseAuth _auth = FirebaseAuth.instance;
+  // Utility class instance for form validation
   var appValidator = AppValidator();
-
+  // Flag to manage loading state
   bool _isLoading = false;
+  // Authentication service instance
   var authService = AuthService();
+  // Flag to toggle password visibility
   bool _obscurePassword = true;
-
-  //TextEditingController _emailController = TextEditingController();
-  //TextEditingController _passwordController = TextEditingController();
-  //TextEditingController _usernameController = TextEditingController();
-
+  /// Handles user registration
   Future<void> _submitForm() async {
     if (_formKey.currentState!.validate()) {
       setState(() => _isLoading = true);
       try {
+        // Creating user with email and password
         await _auth.createUserWithEmailAndPassword(
           email: _emailController.text.trim(),
           password: _passwordController.text.trim(),
         );
-
+        // Show success message
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Account created successfully')),
         );
-
+        // Navigate to home screen after successful sign-up
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => HomeScreen()),
         );
       } catch (e) {
+        // Show error message if sign-up fails
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: ${e.toString()}')),
         );
@@ -75,6 +79,7 @@ class _SignUpViewState extends State<SignUpView> {
                     fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 50.0),
+              // Username field
               TextFormField(
                 controller: _usernameController,
                 style: TextStyle(color: Colors.white),
@@ -83,6 +88,7 @@ class _SignUpViewState extends State<SignUpView> {
                 validator: appValidator.validateUsername,
               ),
               SizedBox(height: 16.0),
+              // Email field
               TextFormField(
                 controller: _emailController,
                 keyboardType: TextInputType.emailAddress,
@@ -92,6 +98,7 @@ class _SignUpViewState extends State<SignUpView> {
                 validator: appValidator.validateEmail,
               ),
               SizedBox(height: 16.0),
+              // Password field with visibility toggle
               TextFormField(
                 controller: _passwordController,
                 obscureText: _obscurePassword,
@@ -114,6 +121,7 @@ class _SignUpViewState extends State<SignUpView> {
                 validator: appValidator.validatePassword,
               ),
               SizedBox(height: 40.0),
+                // Sign-up button
               SizedBox(
                 height: 50,
                 width: double.infinity,
@@ -127,6 +135,7 @@ class _SignUpViewState extends State<SignUpView> {
                 ),
               ),
               SizedBox(height: 30.0),
+              // Navigate to login screen
               TextButton(
                 onPressed: () {
                   Navigator.pushReplacement(
@@ -145,7 +154,7 @@ class _SignUpViewState extends State<SignUpView> {
       ),
     );
   }
-
+/// Helper method to build input fields decoration
   InputDecoration _buildInputDecoration(String label, IconData icon) {
     return InputDecoration(
       fillColor: Color(0xAA494A59),
