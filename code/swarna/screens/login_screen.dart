@@ -13,30 +13,18 @@ class LoginView extends StatefulWidget {
 }
 
 class LoginViewState extends State<LoginView> {
+  // Form key for validation
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final AppValidator appValidator = AppValidator();
+  // Controllers for email and password fields
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  // Loading state to indicate login process
   bool _isLoading = false;
   var authService = AuthService();
   bool _isPasswordVisible = false;
-
+  /// Handles the login functionality
   Future<void> _submitForm() async {
-    /*if (_formKey.currentState!.validate()) {
-      setState(() {
-        _isLoading = true;
-      });
-      var data = {
-        "email": _emailController.text,
-        "password": _passwordController.text,
-      };
-      await authService.login(data, context);
-
-      setState(() {
-        _isLoading = false;
-      });
-
-    }*/
     if (_formKey.currentState!.validate()) {
       setState(() => _isLoading = true);
       try {
@@ -51,6 +39,7 @@ class LoginViewState extends State<LoginView> {
           MaterialPageRoute(builder: (context) => HomeScreen()),
         );
       } catch (e) {
+        // Display error message if login fails
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: ${e.toString()}')),
         );
@@ -58,7 +47,7 @@ class LoginViewState extends State<LoginView> {
       setState(() => _isLoading = false);
     }
   }
-
+  /// Builds input decoration for text fields
   InputDecoration _buildInputDecoration(String label, IconData suffixIcon,
       {bool isPassword = false}) {
     return InputDecoration(
@@ -117,6 +106,7 @@ class LoginViewState extends State<LoginView> {
                   ),
                 ),
                 const SizedBox(height: 50.0),
+                // Email input field
                 TextFormField(
                   controller: _emailController,
                   keyboardType: TextInputType.emailAddress,
@@ -126,6 +116,7 @@ class LoginViewState extends State<LoginView> {
                   validator: appValidator.validateEmail,
                 ),
                 const SizedBox(height: 16.0),
+                // Password input field
                 TextFormField(
                   controller: _passwordController,
                   obscureText: !_isPasswordVisible,
@@ -139,6 +130,7 @@ class LoginViewState extends State<LoginView> {
                   validator: appValidator.validatePassword,
                 ),
                 const SizedBox(height: 40.0),
+                // Login button
                 SizedBox(
                   height: 50,
                   width: double.infinity,
@@ -153,6 +145,7 @@ class LoginViewState extends State<LoginView> {
                   ),
                 ),
                 const SizedBox(height: 30.0),
+                // Navigation to sign-up page
                 TextButton(
                   onPressed: () {
                     Navigator.push(
