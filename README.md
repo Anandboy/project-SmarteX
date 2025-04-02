@@ -9,22 +9,6 @@ The app offers data visualization tools like pie charts and line graphs to provi
 By integrating budgeting tools, it promotes better financial discipline and helps users achieve their financial goals.<br>
 Built using Flutter, it ensures smooth performance on Android devices.<br>
 
-## 🔹 Key Features  
-### Expense Entry Options:<br>
-- **Manual Entry:** Users can manually log expenses with details like amount, category, and description.<br>
-- **Automated SMS Extraction:** Uses Machine Learning (ML) to extract expense details from bank SMS notifications.<br>
-
-### Data Visualization:<br>
-- **Pie Chart:** Displays expense distribution across categories.<br>
-
-### Budgeting & Alerts:<br>
-- **Users can set financial goals and track budgets.**<br>
-- **Alerts notify users when they exceed budget limits.**<br>
-
-### User Authentication:<br>
-- **Firebase Authentication for secure login.**<br>
-- **Encrypted data storage to protect financial information.**<br>
-
 ## Installation Guide
 
 ### 1. Clone the Repository
@@ -83,19 +67,22 @@ flutter run
 
 You can also select the device and run it via **Run > Run 'main.dart'** inside Android Studio.
 
-## Features
+## 🔹 Key Features  
+### Expense Entry Options:<br>
+- **Manual Entry:** Users can manually log expenses with details like amount, category, and description.<br>
+- **Automated SMS Extraction:** Uses Machine Learning (ML) to extract expense details from bank SMS notifications.<br>
 
-### 1. Expense Entry
-- **Manual Entry:** Users can manually enter expenses with details like amount, category, and description.
-- **Automatic SMS Extraction:** Detects and extracts expenses from SMS notifications.
+### Data Visualization:<br>
+- **Pie Chart:** Displays expense distribution across categories.<br>
 
-### 2. Data Visualization
-- **Pie Chart:** Displays expense distribution by category.
-- **Line Graph:** Shows spending trends over time.
+### Budgeting & Alerts:<br>
+- **Users can set financial goals and track budgets.**<br>
+- **Alerts notify users when they exceed budget limits.**<br>
 
-### 3. Budget Management
-- Set budget limits for different categories.
-- Get alerts when nearing or exceeding budget limits.
+### User Authentication:<br>
+- **Firebase Authentication for secure login.**<br>
+- **Encrypted data storage to protect financial information.**<br>
+
 
 ## Project Structure
 
