@@ -1,0 +1,2 @@
+/home/arun/personal_expense_tracker/android/app/.cxx/Debug/4r12274a/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/arun/personal_expense_tracker/android/app/.cxx/Debug/4r12274a/armeabi-v7a/CMakeFiles/rebuild_cache.dir

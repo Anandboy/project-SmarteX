@@ -1,0 +1,1 @@
+/home/arun/Downloads/personal_expense_tracker/build/app/intermediates/cxx/Debug/6v6k144m/obj/arm64-v8a

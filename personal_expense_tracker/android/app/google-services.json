@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "188961519445",
+    "project_id": "farmers-b8a11",
+    "storage_bucket": "farmers-b8a11.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188961519445:android:b8de403e42dd230e9ae1dc",
+        "android_client_info": {
+          "package_name": "com.example.personal_expense_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp4MDww3r7zIi_peS_VT_7LgJR5OLJxaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

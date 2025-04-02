@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/home/arun/snap/flutter/common/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/usr/bin/ninja",
+      "-C",
+      "/home/arun/Downloads/personal_expense_tracker/android/app/.cxx/Debug/6v6k144m/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/usr/bin/ninja",
+    "-C",
+    "/home/arun/Downloads/personal_expense_tracker/android/app/.cxx/Debug/6v6k144m/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
