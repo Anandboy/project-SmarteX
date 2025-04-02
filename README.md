@@ -1,5 +1,5 @@
 # SmarteX Expense Tracker
-## FINAL PROJECT LINK
+## FINAL PROJECT FOLDER LINK
 (https://drive.google.com/drive/folders/1VG2Ji5vwvJSC1kK86bzp-p-vV-WDMzRm?usp=sharing)
 # 📌 Abstract  
 The SmarteX Expense Tracker is a mobile application designed to help users track, analyze, and manage their personal finances efficiently.<br>
