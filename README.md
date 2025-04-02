@@ -14,16 +14,10 @@ Built using Flutter, it ensures smooth performance on Android devices.<br>
 ### 1. Clone the repository
 ```sh
 git clone https://github.com/Anandboy/project-SmarteX
+cd project-SmarteX/personal-expense-tracker
 ```
- NOTE-The repo contains our individual contributions where if you are installing that then create a new flutter project and replace it with the files on the folder project-SmarteX. 
+ NOTE-The folder `code` represents our individual contributions and integrated one is the folder `personal-expense-tracker` so navigate to that folder
 
-## OR
-
-## Download the drive folder and navigate to the folder
-```sh
-https://drive.google.com/drive/folders/1VG2Ji5vwvJSC1kK86bzp-p-vV-WDMzRm?usp=sharing
-cd SmarteX
-```
 
 ### 2. Install Dependencies
 
@@ -55,7 +49,7 @@ flutter pub get
 
 1. Open Android Studio.
 2. Select **Open an Existing Project**.
-3. Navigate to the `project-SmarteX` folder and open it.
+3. Navigate to the `personal-expense-tracker` folder and open it.
 4. Ensure Flutter and Dart plugins are installed.
 
 ### 4. Run the Application
