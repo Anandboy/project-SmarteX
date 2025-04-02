@@ -15,7 +15,7 @@ Built using Flutter, it ensures smooth performance on Android devices.<br>
 ```sh
 git clone https://github.com/Anandboy/project-SmarteX
 ```
-## NOTE-The repo contains our individual contributions where if you are installing that then create a new flutter project and replace it with the files on the folder project-SmarteX. 
+ NOTE-The repo contains our individual contributions where if you are installing that then create a new flutter project and replace it with the files on the folder project-SmarteX. 
 
 ## OR
 
