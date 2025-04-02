@@ -1,5 +1,5 @@
-# project-SmarteX
-## FINAL PROJECT
+# SmarteX Expense Tracker
+## FINAL PROJECT LINK
 (https://drive.google.com/drive/folders/1VG2Ji5vwvJSC1kK86bzp-p-vV-WDMzRm?usp=sharing)
 # 📌 Abstract  
 The SmarteX Expense Tracker is a mobile application designed to help users track, analyze, and manage their personal finances efficiently.<br>
@@ -24,8 +24,6 @@ Built using Flutter, it ensures smooth performance on Android devices.<br>
 ### User Authentication:<br>
 - **Firebase Authentication for secure login.**<br>
 - **Encrypted data storage to protect financial information.**<br>
-# SmarteX Expense Tracker
-
 
 ## Installation Guide
 
