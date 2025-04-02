@@ -49,7 +49,7 @@ flutter pub get
 
 1. Open Android Studio.
 2. Select **Open an Existing Project**.
-3. Navigate to the `personal-expense-tracker` folder and open it.
+3. Navigate to the `personal_expense_tracker` folder and open it.
 4. Ensure Flutter and Dart plugins are installed.
 
 ### 4. Run the Application
@@ -88,7 +88,7 @@ You can also select the device and run it via **Run > Run 'main.dart'** inside A
 ## Project Structure
 
 ```
-lib/
+personal_expense_tracker/lib/
 │── main.dart           # Entry point of the app
 │── login_screen.dart   # Login screen UI
 │── sign_up.dart        # User registration screen
