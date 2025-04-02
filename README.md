@@ -25,8 +25,6 @@ Built using Flutter, it ensures smooth performance on Android devices.<br>
 - **Firebase Authentication for secure login.**<br>
 - **Encrypted data storage to protect financial information.**<br>
 
-### Database Integration:<br>
-- **Uses Firebase Firestore to store and manage financial data in real-time.**<br>
 
 ## 🔹 Technologies Used  
 - **Flutter** – Frontend UI development.<br>
@@ -35,10 +33,6 @@ Built using Flutter, it ensures smooth performance on Android devices.<br>
 - **Machine Learning (ML)** – Extracts transaction details from SMS.<br>
 - **fl_chart Library** – Generates pie charts & line graphs for visual analytics.<br>
 
-## 🔹 System Design  
-### User Interface (UI):<br>
-- **Simple and Intuitive Design** – The interface is clean and user-friendly, ensuring smooth navigation and easy access to expense management features.<br>
-- **Quick Access to Key Features** – The home screen provides four main options (Manual Expense, Automatic Expense, View Charts, and Set Alerts), allowing users to efficiently manage and track their expenses.<br>
 
 ### Backend Components:<br>
 - **ML Model for SMS classification.**<br>
