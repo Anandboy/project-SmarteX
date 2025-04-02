@@ -11,11 +11,18 @@ Built using Flutter, it ensures smooth performance on Android devices.<br>
 
 ## Installation Guide
 
-### 1. Clone the Repository
-
+### 1. Clone the repository
 ```sh
-git clone https://github.com/Anandboy/project-SmarteX.git
-cd project-SmarteX
+git clone https://github.com/Anandboy/project-SmarteX
+```
+## NOTE-The repo contains our individual contributions where if you are installing that then create a new flutter project and replace it with the files on the folder project-SmarteX. 
+
+## OR
+
+## Download the drive folder and navigate to the folder
+```sh
+https://drive.google.com/drive/folders/1VG2Ji5vwvJSC1kK86bzp-p-vV-WDMzRm?usp=sharing
+cd SmarteX
 ```
 
 ### 2. Install Dependencies
@@ -116,7 +123,6 @@ For issues and contributions, visit the [GitHub Repository](https://github.com/A
 ### Backend Components:<br>
 - **ML Model for SMS classification.**<br>
 - **Firebase for real-time database management.**<br>
-
 
 
 
